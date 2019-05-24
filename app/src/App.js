@@ -1,39 +1,15 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-const Container = styled.div`
-
-`;
-
-const Header = styled.header`
-
-`;
-
-const Nav = styled.nav`
-
-`;
-
-const Main = styled.main`
-
-`;
-
-const Footer = styled.footer`
-
-`;
+import Home from './pages/home/Home';
 
 function App() {
-  
-
   return (
-    <Container>
-      <Header>
-        <Nav></Nav>
-      </Header>
-      <Main>
-
-      </Main>
-      <Footer></Footer>
-    </Container>
+    <Router>
+      <div>
+        <Route path="/" exact component={Home} />
+      </div>
+    </Router>
   );
 }
 
