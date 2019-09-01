@@ -289,7 +289,7 @@ export default function Cycling() {
                                 current={current}
                             >
                                 <Picture>
-                                    <img src={`/static/images/cycling/${index + 1}.jpeg`} />
+                                    <img src={`/static/images/cycling/${index + 1}.jpg`} />
                                     <p>{item.location}</p>
                                 </Picture>
                                 <Description>
