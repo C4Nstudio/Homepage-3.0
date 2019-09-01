@@ -115,7 +115,7 @@ const SubTitle = styled.p`
 `;
 
 const Carousel = styled.div`
-    height: 400px;
+    min-height: 400px;
     position: relative;
     margin: 0 auto;
     width: 100%;
@@ -125,14 +125,26 @@ const Carousel = styled.div`
 
 const Section = styled.div`
     position: absolute;
-    width: 100%;
     top: 0;
     left: ${props => `${props.index * 100}%`};
+    width: 100%;
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;   
+    justify-content: center;
     transform: ${props => `translateX(-${props.current * 100}%)`};
     transition: all .8s ease-in-out;
+
+    @media (max-width: 960px) {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 15px;
+        transform: none;
+
+        &:nth-child(2n + 1) {
+            flex-direction: row-reverse;
+        }
+    }
 `;
 
 const Picture = styled.div`
@@ -150,17 +162,29 @@ const Picture = styled.div`
         font-size: 1.5rem;
         background: #fff;
         padding: 15px 20px;
+        margin: 0;
         bottom: .5rem;
         right: 0;
         transform: translateX(50%);
         box-shadow: 5px 5px 5px rgba(12, 12, 12, .1);
         background: #fffee6;
+
+        @media (max-width: 960px) {
+            transform: none;
+            right: 5px;
+            bottom: 5px;
+        }
     }
 `;
 
 const Description = styled.div`
     padding-left: 100px;
     width: 400px;
+
+    @media (max-width: 780px) {
+        display: none;
+
+    }
 
     div {
         position: relative;
@@ -176,6 +200,12 @@ const Description = styled.div`
             span {
                 padding-bottom: 3px;
                 border-bottom: 2px solid rgba(12, 12, 12, .9);
+            }
+
+            @media (max-width: 960px) {
+                padding: 0;
+                box-shadow: none;
+                background: none;
             }
         }
 
@@ -196,6 +226,14 @@ const Description = styled.div`
                 top: 8rem;
                 left: 10rem;
             }
+
+            @media (max-width: 960px) {
+                position: static;
+                padding: 0%;
+                background: none;
+                box-shadow: none;
+                white-space: nowrap;
+            }
         }
     }
 `;
@@ -204,6 +242,10 @@ const Next = styled.div`
     position: absolute;
     bottom: 10px;
     right: 100px;
+
+    @media (max-width: 960px) {
+        display: none;
+    }
 
     a {
         cursor: pointer;
@@ -265,7 +307,7 @@ export default function Cycling() {
                                 </Description>
                                 <Next>
                                     <a onClick={nextSection}>
-                                        下一个 →
+                                        下一站 →
                                     </a>
                                 </Next>
                             </Section>

@@ -75,6 +75,14 @@ const Block = styled.div`
     overflow: hidden;
     position: relative;
 
+    @media (max-width: 960px) {
+        flex: 33.33%;
+    }
+
+    /* @media (max-width: 960px) {
+        flex: 33.33%;
+    } */
+
     img {
         width: 100%;
         height: 100%;

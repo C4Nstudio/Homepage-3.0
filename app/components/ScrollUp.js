@@ -54,6 +54,10 @@ const Wrap = styled.div`
     div:nth-child(3) {
         animation-delay: 0.4s;
     }
+
+    @media (max-width: 960px) {
+        display: none;
+    }
 `;
 
 export default function ScrollUp(props) {

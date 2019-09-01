@@ -41,7 +41,7 @@ const Menu = styled.ul`
     margin-right: 30px;
     display: none;
 
-    @media ${device.laptopS} {
+    @media (min-width: 960px) {
         display: block;
     }
 `;
@@ -108,7 +108,7 @@ const Toggle = styled.div`
     height: 35px;
     cursor: pointer;
 
-    @media ${device.laptopS} {
+    @media (min-width: 960px) {
         display: none;
     }
 `;
