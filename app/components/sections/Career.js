@@ -28,14 +28,11 @@ const Card = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1 1 33.3%;
-
-    @media (max-width: 800px) {
-        flex: 1 1 60%;
-    }
-
-    @media (max-width: 600px) {
-        flex: 1 1 80%;
+    overflow: hidden;
+    
+    @media (max-width: 840px) {
+        flex: 1 1 100%;
+        justify-content: space-between;
     }
 
     &::before {
@@ -74,14 +71,20 @@ const Front = styled.div`
     align-items: center;
     text-align: center;
 
-    img {
-        width: 100px;
-        height: 100px;
+    div {
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        p {
+            color: #fff;
+            font-size: 1.2rem;
+        }
     }
 
-    p {
-        color: #fff;
-        font-size: 1.2rem;
+    @media (max-width: 840px) {
+        left: 50%;
     }
 `;
 
@@ -127,12 +130,13 @@ const Hover = styled.div`
         }
     }    
 
-    @media (max-width: 800px) {
+    @media (max-width: 840px) {
         display: none;
     }
 `;
 
 const Content = styled.div`
+    box-sizing: border-box;
     width: 100%;
     height: 100%;
     padding: 0 20px;
@@ -153,7 +157,8 @@ const Content = styled.div`
         
     }
 
-    @media (max-width: 800px) {
+    @media (max-width: 840px) {
+        width: 50%;
         opacity: 1;
         visibility: visible;
     }
@@ -174,7 +179,7 @@ export default function Career() {
                     <Front>
                         <div>
                             <img src='/static/images/career/react.svg' />
-                            <p>经验</p>
+                            <p>技能圈</p>
                         </div>
                     </Front>
                     <Hover
@@ -186,16 +191,13 @@ export default function Career() {
                         cardId={1}
                     >
                         <h3>
-                            技术栈
+                            前端与周边
                         </h3>
                         <p>
-                            最常围绕的几个词：<br />
-                            React、Antd、ECharts、<br />
-                            ES6、ES7、Styled-Components<br /><br />
-                            做这网站新用上了：<br />
-                            Next.js<br /><br />
-                            域名、服务器、云解析：<br />
-                            腾讯云、腾讯云，还是腾讯云
+                            HTML/CSS/JavaScript基础扎实<br /><br />
+                            主攻React开发<br /><br />
+                            日常熟练使用AntD、ECharts<br /><br />
+                            本项目托管于GitHub<br /><br />
                         </p>
                     </Content>
                 </Card>
@@ -219,10 +221,11 @@ export default function Career() {
                         </h3>
                         <p>
                             自7102年开始翻工的前端程序猿<br /><br />
-                            习惯日常救火、<br />
-                            做Demo、<br />
-                            和后台吵页面设计:p<br /><br />
-                            当前正在找工作
+                            日常救火、<br />
+                            做项目Demo、<br />
+                            和后台吵页面设计:p<br /><br /><br />
+                            目前正在找工作<br />
+                            寻找一个值得热爱的产品
                         </p>
                     </Content>
                 </Card>
@@ -242,13 +245,15 @@ export default function Career() {
                         cardId={3}
                     >
                         <h3>
-                            关于本网站
+                            关于我的主页
                         </h3>
                         <p>
-                            不经常写文章（这有个<a href="https://c4nstudio.github.io/">博客</a>）<br /><br />
-                            但是爱（wán）好（yì）不少<br /><br />
-                            借此把一些好玩的东西po上来<br /><br />
-                            视频制作板块也即将加入
+                            不经常写文章（这有个<a href="https://c4nstudio.github.io/">博客</a>）<br />
+                            但爱好不少<br />
+                            借此记录各种兴趣<br /><br /><br />
+                            即将加入：<br />
+                            视频制作板块<br />
+                            烘焙菜谱
                         </p>
                     </Content>
                 </Card>
