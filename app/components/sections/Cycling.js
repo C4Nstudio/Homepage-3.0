@@ -235,6 +235,12 @@ const Description = styled.div`
                 white-space: nowrap;
             }
         }
+
+        @media (max-width: 960px) {
+            background: #fffee6;
+            padding: 0 35px 15px;
+            box-shadow: 5px 5px 5px rgba(12, 12, 12, .1);
+        }
     }
 `;
 
