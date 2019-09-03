@@ -196,7 +196,7 @@ function Home() {
       <Footer />
 
       {/* body样式 */}
-      <style jsx>
+      {/* <style jsx>
         {`
               :global(body) {
               margin: 0;
@@ -204,7 +204,7 @@ function Home() {
                   Helvetica, sans-serif;
               }
           `}
-      </style>
+      </style> */}
     </div>
   );
 }
