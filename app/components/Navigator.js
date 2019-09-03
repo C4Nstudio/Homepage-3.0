@@ -37,8 +37,10 @@ const Logo = styled.span`
 `;
 
 const Menu = styled.ul`
+    position: relative;
     list-style: none;
     margin-right: 30px;
+    padding-right: 100px;
     display: none;
 
     @media (min-width: 960px) {
@@ -88,17 +90,42 @@ const Item = styled.li`
     }
 `;
 
-const Contact = styled.a`
-    display: inline-block;
+const Contact = styled.div`
+    position: absolute;
+    top: -5px;
+    right: -12px;
+    background-color: rgba(71, 184, 224, .8);
+    width: 250px;
+    height: 120px;
+    padding: 5px 12px;
     cursor: pointer;
-    background-color: #47b8e0;
-    margin-left: 28px;
-    padding: 8px 15px;
-    border-radius: 12px;
-    transition: all .5s;
+    clip-path: polygon(73% 0%, 100% 0%, 100% 22%, 82% 22%, 75% 30%, 75% 22%, 73% 22%);
+    background-image: url(/static/images/nav/mailBg.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 80px 75px;
+    transition: all .8s;
+
+    a {
+        float: right;
+    }
+
+    p:nth-of-type(1) {
+        padding-top: 1rem;
+    }
+
+    p:nth-of-type(2) {
+        text-align: right;
+    }
 
     &:hover {
-        background-color: rgba(79, 184, 224, .7);
+        background-color: rgba(9, 201, 153, .9);
+        border-radius: 8px;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 100%, 75% 100%, 0 100%, 0% 75%);
+
+        a {
+            opacity: 0;
+        }
     }
 `;
 
@@ -209,7 +236,7 @@ export default function Navigator() {
                 <Menu>
                     <Item>
                         <a href="#career">
-                            前端
+                            职业
                             <span />
                             <span />
                         </a>
@@ -235,16 +262,18 @@ export default function Navigator() {
                             <span />
                         </a>
                     </Item>
-                    <Item>
+                    {/* <Item>
                         <a href="#vfx">
                             视频
                             <span />
                             <span />
                         </a>
-                    </Item>
+                    </Item> */}
 
                     <Contact>
-                        联系我
+                        <a>联系我</a>
+                        <p>这里有个Email ——</p>
+                        <p>C4Nstudio@foxmail.com</p>
                     </Contact>
                 </Menu>
 
@@ -266,7 +295,7 @@ export default function Navigator() {
             >
                 <DropdownMenuItem>
                     <a href="#career">
-                        前端 / Front End
+                        职业 / Career
                     </a>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
