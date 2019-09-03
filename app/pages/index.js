@@ -144,6 +144,7 @@ function Home() {
         <title>Home-C4Nstudio</title>
         <meta charSet='utf-8' />
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+        <meta name="Description" content="C4Nstudio C4N" />
         <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon" />
         <link rel='stylesheet' type='text/css' src='../node_modules/@fontawesome/fontawesome-free/css/all.css' />
       </Head>
@@ -187,7 +188,7 @@ function Home() {
       <Baking />
 
       {/* 视频制作板块 */}
-      <VFX />
+      {/* <VFX /> */}
 
       {/* 返回顶部按钮 */}
       <ScrollUp onClick={scrollToTop} />
