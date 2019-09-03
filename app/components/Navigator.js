@@ -164,7 +164,7 @@ const DropdownMenu = styled.ul`
 const DropdownMenuItem = styled.li`
     width: 100%;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
 `;
 
 export default function Navigator() {
