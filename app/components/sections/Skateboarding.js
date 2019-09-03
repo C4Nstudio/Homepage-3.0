@@ -10,16 +10,17 @@ const Container = styled.div`
 
 const Wrap = styled.div`
     width: 100%;
-    max-width: 1080px;
+    max-width: 900px;
     margin: 0 auto 75px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    transform: rotate(-2.5deg);
+    /* transform: rotate(-2.5deg); */
 `;
 
 const HoverText = styled.h2`
-    margin: 75px 0 0;
-    padding: 0;
+    margin: 0;
+    padding: 75px 0 0;
     font-size: 6rem;
     transition: .5s;
     line-height: .8em;
@@ -84,7 +85,7 @@ const HoverText = styled.h2`
 const Picture = styled.img`
     position: relative;
     top: .5rem;
-    left: -3rem;
+    /* left: -3rem; */
     width: 300px;
     height: 100%;
     border: 15px solid #fefefe;
@@ -92,13 +93,13 @@ const Picture = styled.img`
     z-index: 10;
 
     &:nth-of-type(2) {
-        left: -5rem;
+        /* left: -5rem; */
         z-index: 5;
         transform: rotate(5deg);
     }
 
     &:nth-of-type(3) {
-        left: -6rem;
+        /* left: -6rem; */
         z-index: 1;
         transform: rotate(-3deg);
     }
