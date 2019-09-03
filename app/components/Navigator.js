@@ -119,7 +119,7 @@ const Contact = styled.div`
     }
 
     &:hover {
-        background-color: rgba(9, 201, 153, .9);
+        background-color: linear-gradient(45deg, rgba(9, 201, 153, .9), rgba(71, 184, 224, .8));
         border-radius: 8px;
         clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 100%, 75% 100%, 0 100%, 0% 75%);
 
@@ -272,7 +272,7 @@ export default function Navigator() {
 
                     <Contact>
                         <a>联系我</a>
-                        <p>这里有个Email ——</p>
+                        <p>Email：</p>
                         <p>C4Nstudio@foxmail.com</p>
                     </Contact>
                 </Menu>
