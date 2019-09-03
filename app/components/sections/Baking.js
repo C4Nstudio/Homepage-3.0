@@ -39,7 +39,7 @@ const IMAGE_DESCRIPTIONS = [
 
 const Container = styled.div`
     position: relative;
-    background: linear-gradient(135deg, rgba(238, 122, 00, .9), rgba(238, 122, 00, .3));
+    background: linear-gradient(135deg, rgba(238, 122, 00, .9), rgba(247, 48, 140, .5));
     padding: 80px 0;
     @supports (clip-path: polygon(0 7.5%, 100% 0, 100% 92.5%, 0% 100%)) or (-webkit-clip-path: polygon(0 7.5%, 100% 0, 100% 92.5%, 0% 100%)) {
         clip-path: polygon(0 7.5%, 100% 0, 100% 100%, 0% 100%);
