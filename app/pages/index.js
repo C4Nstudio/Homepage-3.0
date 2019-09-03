@@ -144,6 +144,7 @@ function Home() {
         <title>Home-C4Nstudio</title>
         <meta charSet='utf-8' />
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+        <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon" />
         <link rel='stylesheet' type='text/css' src='../node_modules/@fontawesome/fontawesome-free/css/all.css' />
       </Head>
 
