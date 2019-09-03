@@ -11,7 +11,7 @@ const FOLDED_NAV_HEIGHT = 60;
 
 const Nav = styled.nav`
     position: fixed;
-    z-index: 1;
+    z-index: 1000;
     top: 0;
     width: 100%;
     color: #fff;
