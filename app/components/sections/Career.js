@@ -248,7 +248,7 @@ export default function Career() {
                             关于我的主页
                         </h3>
                         <p>
-                            不经常写文章（这有个<a href="https://c4nstudio.github.io/">博客</a>）<br />
+                            不经常写文章<br />
                             但爱好不少<br />
                             借此记录各种兴趣<br /><br /><br />
                             即将加入：<br />

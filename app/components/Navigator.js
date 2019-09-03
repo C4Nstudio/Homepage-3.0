@@ -114,10 +114,6 @@ const Contact = styled.div`
         padding-top: 1rem;
     }
 
-    p:nth-of-type(2) {
-        text-align: right;
-    }
-
     &:hover {
         background-color: linear-gradient(45deg, rgba(9, 201, 153, .9), rgba(71, 184, 224, .8));
         border-radius: 8px;
@@ -271,9 +267,9 @@ export default function Navigator() {
                     </Item> */}
 
                     <Contact>
-                        <a>联系我</a>
-                        <p>Email：</p>
-                        <p>C4Nstudio@foxmail.com</p>
+                        <a>关于我</a>
+                        <p>Email：C4Nstudio@foxmail.com</p>
+                        <p>博客：C4Nstudio.github.io</p>
                     </Contact>
                 </Menu>
 
