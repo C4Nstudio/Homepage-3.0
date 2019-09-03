@@ -51,6 +51,8 @@ const Item = styled.li`
     display: inline-block;
 
     a {
+        color: #fff;
+        text-decoration: none;
         padding: 15px 10px;
         margin: 0 10px;
         cursor: pointer;
@@ -165,6 +167,12 @@ const DropdownMenuItem = styled.li`
     width: 100%;
     text-align: center;
     font-size: 1rem;
+
+    a {
+        padding: 30px;
+        color: #fff;
+        text-decoration: none;
+    }
 `;
 
 export default function Navigator() {
@@ -200,35 +208,35 @@ export default function Navigator() {
                 {/* 菜单 */}
                 <Menu>
                     <Item>
-                        <a>
+                        <a href="#career">
                             前端
                             <span />
                             <span />
                         </a>
                     </Item>
                     <Item>
-                        <a>
+                        <a href="#skateboarding">
                             滑板
                             <span />
                             <span />
                         </a>
                     </Item>
                     <Item>
-                        <a>
+                        <a href="#cycling">
                             骑行
                             <span />
                             <span />
                         </a>
                     </Item>
                     <Item>
-                        <a>
+                        <a href="#baking">
                             烘焙
                             <span />
                             <span />
                         </a>
                     </Item>
                     <Item>
-                        <a>
+                        <a href="#vfx">
                             视频
                             <span />
                             <span />
@@ -242,7 +250,7 @@ export default function Navigator() {
 
                 {/* 展开菜单 */}
                 <Toggle
-                    onClick={e => toggleMenuDown()}
+                    onClick={toggleMenuDown}
                 >
                     <Bar
                         menuDown={menuDown}
@@ -254,30 +262,30 @@ export default function Navigator() {
             <DropdownMenu
                 menuDown={menuDown}
                 isPageScrolled={isPageScrolled}
-                // onClick={e => console.log(e)}
+                onClick={toggleMenuDown}
             >
                 <DropdownMenuItem>
-                    <a>
+                    <a href="#career">
                         前端 / Front End
                     </a>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
-                    <a>
+                    <a href="#skateboarding">
                         滑板 / Skating
                     </a>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
-                    <a>
+                    <a href="#cycling">
                         骑行 / Cycling
                     </a>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
-                    <a>
+                    <a href="#baking">
                         烘焙 / Baking
                     </a>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
-                    <a>
+                    <a href="#vfx">
                         视频 / VFX
                     </a>
                 </DropdownMenuItem>

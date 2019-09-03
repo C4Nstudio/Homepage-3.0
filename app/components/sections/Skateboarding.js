@@ -11,7 +11,7 @@ const Container = styled.div`
 const Wrap = styled.div`
     width: 100%;
     max-width: 1080px;
-    margin: 0 auto 50px;
+    margin: 0 auto 75px;
     display: flex;
     justify-content: center;
     transform: rotate(-2.5deg);
@@ -106,7 +106,7 @@ const Picture = styled.img`
 
 export default function Skateboarding() {
     return (
-        <Container>
+        <Container id='skateboarding'>
             <Header
                 title='滑板'
                 subTitle='addiction'

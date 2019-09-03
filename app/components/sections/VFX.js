@@ -10,7 +10,7 @@ const Container = styled.div`
 
 export default function VFX() {
     return (
-        <Container>
+        <Container id='vfx'>
             <Header
                 title='视频制作'
                 subTitle='sideline'

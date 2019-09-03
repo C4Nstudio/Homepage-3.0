@@ -10,7 +10,7 @@ const Container = styled.div`
 
 export default function Career() {
     return (
-        <Container>
+        <Container id='career'>
             <Header
                 title='前端开发'
                 subTitle='career'
